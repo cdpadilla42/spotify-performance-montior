@@ -3,10 +3,12 @@ package com.chrispadilla.spotifyperformancemonitor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EntityScan("com.chrispadilla.spotifyperformancemonitor.models")
+@ComponentScan("com.chrispadilla.spotifyperformancemonitor.*")
+@EntityScan("com.chrispadilla.spotifyperformancemonitor.model")
 @EnableJpaRepositories("com.chrispadilla.spotifyperformancemonitor.repositories")
 public class SpotifyperformancemonitorApplication {
 

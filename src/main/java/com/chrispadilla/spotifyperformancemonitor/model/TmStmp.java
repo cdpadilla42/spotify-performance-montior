@@ -15,5 +15,5 @@ public class TmStmp {
 	private long id;
 
 	@Column(nullable = false)
-	private Timestamp timestamp = new TimeStamp();
+	private Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 }

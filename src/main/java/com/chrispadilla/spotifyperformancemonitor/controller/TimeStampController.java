@@ -21,7 +21,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 @RequestMapping("/api/timestamp")
 public class TimeStampController {
 	@Autowired
-	private TimeStampService timeStampService;	
+	private TimeStampService timeStampService;
+	@Autowired
 	private TimeStampRepository timeStampRepository;
 
 	@GetMapping
