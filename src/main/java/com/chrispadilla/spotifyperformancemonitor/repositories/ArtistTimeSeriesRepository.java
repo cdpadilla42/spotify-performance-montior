@@ -3,9 +3,9 @@ package com.chrispadilla.spotifyperformancemonitor.repositories;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.chrispadilla.spotifyperformancemonitor.model.TmStmp;
+import com.chrispadilla.spotifyperformancemonitor.model.ArtistTimeSeries;
 
 @Repository
-public interface TimeStampRepository extends CrudRepository<TmStmp, Long>{
+public interface ArtistTimeSeriesRepository extends CrudRepository<ArtistTimeSeries, Long>{
 	
 }

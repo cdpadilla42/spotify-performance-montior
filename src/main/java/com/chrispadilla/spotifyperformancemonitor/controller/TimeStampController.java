@@ -27,7 +27,7 @@ public class TimeStampController {
 
 	@GetMapping
 	public Iterable<TmStmp> getAll() {
-	return timeStampRepository.findAll();
+		return timeStampRepository.findAll();
 	}
 
 	@PostMapping()

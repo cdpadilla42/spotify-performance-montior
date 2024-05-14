@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan("com.chrispadilla.spotifyperformancemonitor.*")
+@ComponentScan("com.chrispadilla.spotifyperformancemonitor")
 @EntityScan("com.chrispadilla.spotifyperformancemonitor.model")
 @EnableJpaRepositories("com.chrispadilla.spotifyperformancemonitor.repositories")
 public class SpotifyperformancemonitorApplication {

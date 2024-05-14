@@ -6,6 +6,8 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 import jakarta.persistence.GenerationType;
 
 @Entity
@@ -15,5 +17,32 @@ public class TmStmp {
 	private long id;
 
 	@Column(nullable = false)
-	private Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+	@Temporal(TemporalType.TIMESTAMP)
+	private Timestamp timestamp;
+
+	public TmStmp() {
+		this.timestamp = new Timestamp(System.currentTimeMillis());
+	}
+
+	@Override public String toString() {
+		return String.format("Timestamp: %s", this.timestamp);
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public Timestamp getTimestamp() {
+		return timestamp;
+	}
+
+	public void setTimestamp(Timestamp timestamp) {
+		this.timestamp = timestamp;
+	}
+
+	
 }

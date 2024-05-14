@@ -13,7 +13,6 @@ public class TimeStampService implements ITimeStampService{
 
 	public TmStmp createTimeStamp() {
 		TmStmp ts = new TmStmp();
-		System.out.println(ts);
 		return timeStampRepository.save(ts);
 	}
 }
